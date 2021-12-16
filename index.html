@@ -30,16 +30,16 @@
             <form id="formulario" class="container">
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Ingresa el número del SuperHero a buscar</label>
-                    <input type="text" class="form-control" id="input" placeholder="Ingresa un número del 1 al 731">
+                    <input min="1" max="732" required="required" type="number" class="form-control" id="input" placeholder="Ingresa un número del 1 al 732">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Buscar</button>
             </form>
         </section>
-        <section id="resultado" class="container-fluid">
+        <section id="resultado" class="container-fluid pt-5">
             <div class="row py-2">
-                <h1 class="text-center">SuperHero encontrado:</h1>
                 <div class="col-6">
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <h1 class="text-center">SuperHero encontrado:</h1>
+                    <div class="card mb-3" style="max-width: 900px;">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="..." class="img-fluid rounded-start imagenhero" alt="...">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 pt-5 ml-5">
                     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                 </div>
             </div>

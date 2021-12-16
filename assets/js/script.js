@@ -43,9 +43,9 @@ $("#formulario").on("submit", function(ev){
             });
             chart.render();
             
-            }
+        };
             
-            grafico(hero)
+        grafico(hero);
     });
 });
 
